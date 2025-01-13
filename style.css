@@ -1,0 +1,99 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #faf9f6;
+}
+
+.container {
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg,
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container {
+  width: 270px;
+}
+
+svg {
+  width: 1000px;
+  pointer-events: none;
+}
+
+.form-container .form-row {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container .form-row input {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  padding: 5px;
+  outline: none;
+  border: 2px solid #dddddd;
+}
+
+.form-container .form-row input.valid {
+  border-color: #000000;
+}
+
+.form-container .form-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 1px 5px 0px -145px;
+  padding: 0;
+  border: 2px solid #dddddd;
+  cursor: pointer;
+}
+
+.form-container .form-row.checkbox-row {
+  width: 100%; /* Match the width of other input rows */
+  display: flex; /* Enable flexbox for alignment */
+  align-items: center; /* Vertically align checkbox with text */
+  justify-content: flex-start; /* Align checkbox row to the left */
+}
+
+.form-container .form-row input[type="login"] {
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: #eeeeee;
+  text-align: center;
+  /*pointer-events: none;*/
+}
+
+/*.form-container .form-row input[type="login"].valid {*/
+/*    pointer-events: auto;*/
+/*}*/
+
+.form-container input[type="login"]:hover {
+  background-color: #dddddd;
+}
+
+.form-container label,
+.form-container input,
+.form-container input::placeholder {
+  font-size: 15px;
+  font-family: inherit;
+}
+
+svg {
+  stroke-width: 1.2px;
+  /*stroke: #222245;*/
+  stroke: #000000;
+  fill: none;
+}
